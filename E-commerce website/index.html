@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src = 'function.js'></script>
+    <title>C's Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>C's Cuisine</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About C's Cuisine</h2>
+        <p>Welcome to C's Cuisine, where we serve delicious and healthy meals made with fresh ingredients. Our menu offers a variety of options, from breakfast to dinner, to suit all tastes and preferences. Come visit us and enjoy a tasty meal in a warm and welcoming atmosphere!</p>
+      </section>
+      <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li>Breakfast</li>
+          <li>Lunch</li>
+          <li>Dinner</li>
+        </ul>
+        <button id="add-to-cart">Add to Cart</button>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions or comments, please don't hesitate to contact us. We'd love to hear from you!</p>
+        <form action="submit-form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+      <section id="cart">
+        <h2>Cart</h2>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td id="item-name"></td>
+            <td id="item-price"></td>
+            <td><input type="number" id="item-quantity" value="1"></td>
+            <td id="item-total"></td>
+          </tr>
+        </table>
+        <p>Grand Total: <span id="grand-total"></span></p>
+        <button id="checkout">Checkout</button>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 C's Cuisine</p>
+    </footer>
+  </body

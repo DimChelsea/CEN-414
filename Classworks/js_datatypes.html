@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Datatypes</title>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <div id = "div"></div>
+        <script type="text/javascript">
+            /*var t = 10;
+    var t = 11;
+    var tt = 'I am a girl';
+    var ttt = [1,2,3,4,5];
+    //Operators
+    t = t+1; //assignment operator '=' and arithmetic operator'+'
+    console.log("t = t+1: ",t);
+    t++;
+    console.log("t++: ", t);
+    t--;
+    console.log("t--: ", t);
+    if (t <= 13) { //comparison operators '==', '<=','>=','%' and so on...
+        console.log('t is less than or equal to 13');
+    }
+    else{
+        console.log('t is not equal to 13');
+    }
+    console.log(t);
+    (t%12 > 1) ? console.log('True'): console.log('False');
+    console.log("tt:",tt);
+    console.log("ttt: ",ttt);*/
+                var tt = "<p> I am a girl</p>";
+                var ss = "<h1>Welcome</h1>";
+                tt += ss;
+                /*var a = document.getElementById("div");
+                a.innerHTML = ss;*/ //using conventional javascript
+                $("div").html(tt); //using jquery
+        </script>
+    </body>
+</html>
